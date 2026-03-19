@@ -23,6 +23,7 @@ build/
 *.jpg
 *.jpeg
 *.png
+!screenshots/*.png
 *.gif
 # OS
 .DS_Store

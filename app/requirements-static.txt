@@ -1,0 +1,15 @@
+fastapi==0.103.2
+uvicorn==0.34.0
+pymilvus==2.5.4
+tensorflow==2.14.0
+torch==2.0.0
+tqdm==4.67.1
+#pandas==1.5.3
+#numpy==1.24.3
+passlib[bcrypt]==1.7.4
+pyjwt==2.10.1
+sqlalchemy==2.0.24
+psycopg2-binary
+python-jose[cryptography]==3.4.0
+typing-extensions
+python-multipart

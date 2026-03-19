@@ -1,0 +1,2239 @@
+Query Set:
+1. shoes
+2. cellular case
+3. baby wash
+4. meal
+5. ballet shoes
+6.red phone case
+7. table
+8. pet bed
+
+===========================
+bm25_500 hybrid with bge small
+===========================
+al worked for sentences like "am feeling hungry, how about some food choices?
+
+shoes
+cellular case
+meal
+table
+pet bed
+
+Collection 'bm25_500' loaded and ready for queries.
+INFO:     127.0.0.1:56907 - "POST /rag/process_documents?collection_name=bm25_500 HTTP/1.1" 200 OK
+Query intent: {'category': 'SHOES', 'attributes': [], 'material': None, 'style': None, 'brand': None, 'functionality': []}
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.92it/s]
+INFO:     127.0.0.1:56983 - "POST /rag/query?collection_name=bm25_500 HTTP/1.1" 200 OK
+Query intent: {'category': 'BED', 'attributes': [], 'material': None, 'style': None, 'brand': None, 'functionality': []}
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.40it/s]
+INFO:     127.0.0.1:56986 - "POST /rag/query?collection_name=bm25_500 HTTP/1.1" 200 OK
+Query intent: {'category': 'CELLULAR_PHONE_CASE', 'attributes': [], 'material': None, 'style': None, 'brand': None, 'functionality': []}
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.10it/s]
+INFO:     127.0.0.1:56998 - "POST /rag/query?collection_name=bm25_500 HTTP/1.1" 200 OK
+Query intent: {'category': 'GROCERY', 'attributes': [], 'material': None, 'style': None, 'brand': None, 'functionality': []}
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.47it/s]
+INFO:     127.0.0.1:57000 - "POST /rag/query?collection_name=bm25_500 HTTP/1.1" 200 OK
+Query intent: {'category': 'TABLE', 'attributes': [], 'material': None, 'style': None, 'brand': None, 'functionality': []}
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.02it/s]
+INFO:     127.0.0.1:57009 - "POST /rag/query?collection_name=bm25_500 HTTP/1.1" 200 OK
+Query intent: {'category': 'SOFA', 'attributes': [], 'material': None, 'style': None, 'brand': None, 'functionality': []}
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.72it/s]
+INFO:     127.0.0.1:57016 - "POST /rag/query?collection_name=bm25_500 HTTP/1.1" 200 OK
+
+
+
+
+
+
+
+
+
+
+
+==============
+bm25 sample 30 hybrid with bge small
+===========================
+
+shoes
+
+cellular case
+Query intent: {'category': None, 'attributes': [], 'material': None, 'style': None, 'brand': None, 'functionality': []}
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.85it/s]
+INFO:     127.0.0.1:54834 - "POST /rag/query?collection_name=b HTTP/1.1" 200 OK
+{
+  "response": "1. Recommends the most relevant product with 1-2 specific features that match the query 2. Recommends the most relevant product with 1-2 specific features that match the query 3. Keeps to 2-3 concise sentences 4. Is friendly and helpful 5. Only mentions products from the list above",
+  "products": [
+    {
+      "product_id": "B07T7ZY6P6",
+      "product_title": "Amazon Brand - Solimo Designer Lighting 3D Printed Hard Back Case Mobile Cover for Vivo V1 Max",
+      "product_category": "CELLULAR_PHONE_CASE",
+      "manufacturer_brand": "Amazon Brand - Solimo",
+      "primary_color": "multi-colored",
+      "product_features": "3D Printed Hard Back Case Mobile Cover for Vivo V1 Max | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique pe..."
+    },
+    {
+      "product_id": "B0853X5SQ5",
+      "product_title": "Amazon Brand - Solimo Designer Red Moon UV Printed Soft Back Case Mobile Cover for Lava Z61",
+      "product_category": "CELLULAR_PHONE_CASE",
+      "manufacturer_brand": "Amazon Brand - Solimo",
+      "primary_color": "multi-colored",
+      "product_features": "Snug fit for Lava Z61, with perfect cut-outs for volume buttons, audio and charging ports | Compatible with Lava Z61 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ..."
+    },
+    {
+      "product_id": "B0857KVPRQ",
+      "product_title": "Amazon Brand - Solimo Designer Head Phone UV Printed Soft Back Case Mobile Cover for Motorola Moto E5 Plus",
+      "product_category": "CELLULAR_PHONE_CASE",
+      "manufacturer_brand": "Amazon Brand - Solimo",
+      "primary_color": "multi-colored",
+      "product_features": "Snug fit for Motorola Moto E5 Plus, with perfect cut-outs for volume buttons, audio and charging ports | Compatible with Motorola Moto E5 Plus | Easy to put & take off with perfect cutouts for volume ..."
+    }
+  ]
+}
+
+baby wash
+
+meal
+
+ballet shoes
+
+red phone case
+
+table
+
+pet bed
+{
+  "response": "1.",
+  "products": [
+    {
+      "product_id": "B07FD7KTJX",
+      "product_title": "AmazonBasics Warming Pet Bed 22-Inch DF2018203M",
+      "product_category": "PET_SUPPLIES",
+      "manufacturer_brand": "AmazonBasics",
+      "primary_color": "",
+      "product_features": "Plush self-warming pet bed for dogs and cats | Made with the same technology as self-warming mylar \"space blankets\" | Effectively retains and reflects your pets's body heat | Covered in faux sherpa fl..."
+    },
+    {
+      "product_id": "B07N6V9Z41",
+      "product_title": "AmazonBasics Non-Slip Bathroom Bath Rug Mat with Textured Waves",
+      "product_category": "HOME_BED_AND_BATH",
+      "manufacturer_brand": "AmazonBasics",
+      "primary_color": "",
+      "product_features": "..."
+    },
+    {
+      "product_id": "B073G8Q656",
+      "product_title": "Amazon Brand â€“ Stone & Beam Carrigan Modern Sofa Couch with Slipcover, 88.5\"W, Grey Taupe",
+      "product_category": "FURNITURE_COVER",
+      "manufacturer_brand": "Stone & Beam",
+      "primary_color": "Grey",
+      "product_features": "Nothing says casual comfort like this simple slipcovered sofa. With a classic design in a 100% cotton fabric it's not only super cozy but low maintenance and built to endure wear and tear. | 88.5\"W x ..."
+    }
+  ]
+}
+Query intent: {'category': 'BED', 'attributes': [], 'material': None, 'style': None, 'brand': None, 'functionality': []}
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.80it/s]
+INFO:     127.0.0.1:54809 - "POST /rag/query?collection_name=b HTTP/1.1" 200 OK
+
+============================
+multiqa_500_enhancedretrieval
+============================
+shoes:
+{
+  "response": "I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried.",
+  "retrieved_documents": [
+    {
+      "image_caption": "a pair of red and black flip flops",
+      "image_id": "71stahIMnxL",
+      "image_path": "/88/886486f6.jpg",
+      "brand": "Solefit",
+      "color_standardized": "Red",
+      "bullet_point": "Outer Material: EVA | Closure Type: Slip On | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 30 days",
+      "item_name": "Solefit Men's Red Slippers-7 UK (41 EU) (SLFT-0078)",
+      "product_type": "SHOES",
+      "item_id": "B08CJ1GC5V"
+    },
+    {
+      "image_caption": "[undetermined product]",
+      "image_id": "81fQHVMoyHL",
+      "image_path": "/41/4156f812.jpg",
+      "brand": "ELISE",
+      "color_standardized": "Pink",
+      "material": "Fabric",
+      "bullet_point": "Outer Material: Textile | Closure Type: Slip On | Heel type: flats | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 45 days",
+      "item_name": "ELISE Women's Pink Running Shoes-3 UK (36 EU) (4 US) (ES-S20-002)",
+      "product_type": "SHOES",
+      "item_id": "B08BVNLDFV"
+    },
+    {
+      "image_caption": "a pair of black sneakers on a white background",
+      "image_id": "81Pq-CBJ02L",
+      "image_path": "/cf/cf999d47.jpg",
+      "brand": "Amazon Brand - Symbol",
+      "material": "Synthetic",
+      "bullet_point": "Outer Material: Synthetic | Lifestyle: Men's Casual Shoes | Product Type: Sneakers | Closure Type: Lace-Up | Toe Style: Closed Toe | Care Instructions: Allow your pair of shoes to air and de-odorize at regular basis; Using a Shoe-horn to wear your shoes will avoid damage to the back of your shoes; Use Shoe bags to prevent any stains or mildew.",
+      "item_name": "Amazon Brand - Symbol Men's Sneakers",
+      "product_type": "SHOES",
+      "item_id": "B074DZ4J6R"
+    }
+  ]
+}
+
+
+cellular case:
+{
+  "response": "It's a cellular case.",
+  "retrieved_documents": [
+    {
+      "image_id": "81PceOkGsfL",
+      "image_path": "/77/77c12aab.jpg",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "product_type": "OFFICE_PRODUCTS",
+      "item_id": "B07K8ZNL1C",
+      "image_caption": "a black shelf with five shelves on top of it"
+    },
+    {
+      "image_id": "81lWZs2OGKL",
+      "image_path": "/20/20e5efdd.jpg",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "product_type": "SPORTING_GOODS",
+      "item_id": "B07F1ZB48H",
+      "image_caption": "[undetermined product]"
+    },
+    {
+      "image_id": "619TIH8vqoL",
+      "image_path": "/8c/8cb49dac.jpg",
+      "brand": "Amazon Brand - Solimo",
+      "material": "Silicon",
+      "item_name": "Amazon Brand - Solimo Mobile Cover (Soft & Flexible Back case) for Vivo U10 (Transparent)",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "Snug fit for Vivo U10,  with perfect cut-outs for volume buttons,  audio and charging ports | Compatible with Vivo U10 | Durable,  soft and flexible back case,  Tear and slip-resistant | Raised upper lip build design to help protect the screen against fall on a flat surface | Protects phone from scratches,  fingerprints and sweat | Does not turn yellow after extended use",
+      "model_name": "Vivo U10",
+      "color_standardized": "clear",
+      "item_id": "B083PDT1D5",
+      "image_caption": "[undetermined product]"
+    }
+  ]
+}
+baby wash:
+{
+  "response": "I've tried to buy a bath towel for my son. He's not satisfied with it.",
+  "retrieved_documents": [
+    {
+      "item_id": "B07K8SNQ7X",
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_id": "81QOZCNGrpL",
+      "brand": "Stone & Beam",
+      "image_caption": "[undetermined product]",
+      "image_path": "/e0/e01676c1.jpg"
+    },
+    {
+      "item_id": "B07HLDKTPX",
+      "item_name": "AmazonBasics Chambray Sheet Set",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_id": "91L6xJd00jL",
+      "brand": "AmazonBasics",
+      "image_caption": "the white sheets are folded on top of each other sheets",
+      "image_path": "/d5/d56afac4.jpg"
+    },
+    {
+      "item_id": "B07F1ZB48H",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "product_type": "SPORTING_GOODS",
+      "image_id": "81lWZs2OGKL",
+      "image_caption": "[undetermined product]",
+      "image_path": "/20/20e5efdd.jpg"
+    }
+  ]
+}
+meal:
+{
+  "response": "I've tried to buy a new item for my wife. She's not satisfied with it.",
+  "retrieved_documents": [
+    {
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "product_type": "SPORTING_GOODS",
+      "image_caption": "[undetermined product]",
+      "image_id": "81lWZs2OGKL",
+      "image_path": "/20/20e5efdd.jpg",
+      "item_id": "B07F1ZB48H"
+    },
+    {
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_caption": "[undetermined product]",
+      "image_id": "81QOZCNGrpL",
+      "image_path": "/e0/e01676c1.jpg",
+      "brand": "Stone & Beam",
+      "item_id": "B07K8SNQ7X"
+    },
+    {
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "product_type": "OFFICE_PRODUCTS",
+      "image_caption": "a black shelf with five shelves on top of it",
+      "image_id": "81PceOkGsfL",
+      "image_path": "/77/77c12aab.jpg",
+      "item_id": "B07K8ZNL1C"
+    }
+  ]
+}
+ballet shoes:
+{
+  "response": "The Flavia Women's Apricot Ballet Flats-6 UK (38 EU) (7 US) (FL-96/APC) Type: SHOES Brand: Flavia Features: Outer Material: PU | Closure Type: Slip On | Heel Type: Flats | Toe Style: Open Toe | Warranty Type: Manufacturer: Warranty Description: 45 days",
+  "retrieved_documents": [
+    {
+      "color_standardized": "Brown",
+      "item_id": "B07ZFRX9FF",
+      "item_name": "Flavia Women's Apricot Ballet Flats-6 UK (38 EU) (7 US) (FL-96/APC)",
+      "product_type": "SHOES",
+      "image_caption": "a picture of a woman ' s ballet shoes",
+      "brand": "Flavia",
+      "bullet_point": "Outer Material: PU | Closure Type: Slip On | Heel type: flats | Toe Style: Round Toe | Warranty Type: Manufacturer | Warranty Description: 90 days",
+      "image_id": "61DJtLjAl7L",
+      "image_path": "/b7/b7de52ed.jpg"
+    },
+    {
+      "color_standardized": "Black",
+      "item_id": "B07R79WR1Z",
+      "item_name": "Amazon Brand - find. Mini Heel Leather Ballet Closed-Toe Pumps, Black, US 5",
+      "product_type": "SHOES",
+      "image_caption": "a pair of black shoes with a bow on the heel",
+      "brand": "find.",
+      "model_name": "119AL0075",
+      "bullet_point": "Designed in Europe - please refer to size chart for specific measurements to achieve the perfect fit | An Amazon Brand",
+      "image_id": "61MQ0G42LbL",
+      "image_path": "/92/9278f7d2.jpg"
+    },
+    {
+      "color_standardized": "Pink",
+      "item_id": "B08BVNLDFV",
+      "item_name": "ELISE Women's Pink Running Shoes-3 UK (36 EU) (4 US) (ES-S20-002)",
+      "product_type": "SHOES",
+      "image_caption": "[undetermined product]",
+      "brand": "ELISE",
+      "material": "Fabric",
+      "bullet_point": "Outer Material: Textile | Closure Type: Slip On | Heel type: flats | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 45 days",
+      "image_id": "81fQHVMoyHL",
+      "image_path": "/41/4156f812.jpg"
+    }
+  ]
+}
+red phone case:
+{
+  "response": "The red phone case is a great option for a pair of shoes.",
+  "retrieved_documents": [
+    {
+      "product_type": "SHOES",
+      "bullet_point": "Outer Material: EVA | Closure Type: Slip On | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 30 days",
+      "image_caption": "a pair of red and black flip flops",
+      "image_path": "/88/886486f6.jpg",
+      "item_id": "B08CJ1GC5V",
+      "item_name": "Solefit Men's Red Slippers-7 UK (41 EU) (SLFT-0078)",
+      "image_id": "71stahIMnxL",
+      "brand": "Solefit",
+      "color_standardized": "Red"
+    },
+    {
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "3D Printed Hard Back Case Mobile Cover for OnePlus 2 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface. | Slim Hard Back Cover | No Warranty",
+      "image_caption": "a phone case with a red heart on it",
+      "image_path": "/cd/cdb7a13b.jpg",
+      "item_id": "B07T7ZZQDY",
+      "item_name": "Amazon Brand - Solimo Designer Heart Shape Lady with Glitter 3D Printed Hard Back Case Mobile Cover for OnePlus 2",
+      "image_id": "71UluI9aq1L",
+      "brand": "Amazon Brand - Solimo",
+      "model_name": "OnePlus 2",
+      "color_standardized": "multi-colored"
+    },
+    {
+      "product_type": "OFFICE_PRODUCTS",
+      "image_caption": "a black shelf with five shelves on top of it",
+      "image_path": "/77/77c12aab.jpg",
+      "item_id": "B07K8ZNL1C",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "image_id": "81PceOkGsfL"
+    }
+  ]
+}
+table:
+{
+  "response": "The item is a 5 tier metal document rack. It is available in a variety of colors.",
+  "retrieved_documents": [
+    {
+      "item_id": "B07K8ZNL1C",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "image_path": "/77/77c12aab.jpg",
+      "image_id": "81PceOkGsfL",
+      "product_type": "OFFICE_PRODUCTS",
+      "image_caption": "a black shelf with five shelves on top of it"
+    },
+    {
+      "item_id": "B07F1ZB48H",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "image_path": "/20/20e5efdd.jpg",
+      "image_id": "81lWZs2OGKL",
+      "product_type": "SPORTING_GOODS",
+      "image_caption": "[undetermined product]"
+    },
+    {
+      "item_id": "B07K8SNQ7X",
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel",
+      "image_path": "/e0/e01676c1.jpg",
+      "image_id": "81QOZCNGrpL",
+      "brand": "Stone & Beam",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_caption": "[undetermined product]"
+    }
+  ]
+}
+pet bed:
+{
+  "response": "I've tried to find a pet bed for my dog. It's a good choice.",
+  "retrieved_documents": [
+    {
+      "item_name": "AmazonBasics Memory Foam Dog Bed with Removable Washable Cover, 18 Inch X 28 Inch",
+      "image_caption": "a blue and white dog bed on a white background",
+      "image_id": "810GL2Z9qhL",
+      "image_path": "/7a/7a84d4c8.jpg",
+      "item_id": "B07BLFFBPS",
+      "product_type": "PET_SUPPLIES"
+    },
+    {
+      "item_name": "Rivet Dark Grey Swatch, Rivet",
+      "image_caption": "a black leather wallet with a zipper closure",
+      "image_id": "51RFLfkjsFL",
+      "brand": "Rivet",
+      "image_path": "/8c/8c53c776.jpg",
+      "item_id": "B07CSY4N51",
+      "product_type": "SOFA"
+    },
+    {
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel",
+      "image_caption": "[undetermined product]",
+      "image_id": "81QOZCNGrpL",
+      "brand": "Stone & Beam",
+      "image_path": "/e0/e01676c1.jpg",
+      "item_id": "B07K8SNQ7X",
+      "product_type": "HOME_BED_AND_BATH"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==========================
+enhanced_retrieval_claude
+=========================
+shoes
+{
+  "response": "I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried.",
+  "retrieved_documents": [
+    {
+      "item_id": "B08CJ1GC5V",
+      "image_caption": "a pair of red and black flip flops",
+      "image_id": "71stahIMnxL",
+      "item_name": "Solefit Men's Red Slippers-7 UK (41 EU) (SLFT-0078)",
+      "product_type": "SHOES",
+      "bullet_point": "Outer Material: EVA | Closure Type: Slip On | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 30 days",
+      "image_path": "/88/886486f6.jpg",
+      "brand": "Solefit",
+      "color_standardized": "Red"
+    },
+    {
+      "item_id": "B08BVNLDFV",
+      "image_caption": "[undetermined product]",
+      "image_id": "81fQHVMoyHL",
+      "material": "Fabric",
+      "item_name": "ELISE Women's Pink Running Shoes-3 UK (36 EU) (4 US) (ES-S20-002)",
+      "product_type": "SHOES",
+      "bullet_point": "Outer Material: Textile | Closure Type: Slip On | Heel type: flats | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 45 days",
+      "image_path": "/41/4156f812.jpg",
+      "brand": "ELISE",
+      "color_standardized": "Pink"
+    },
+    {
+      "item_id": "B074DZ4J6R",
+      "image_caption": "a pair of black sneakers on a white background",
+      "image_id": "81Pq-CBJ02L",
+      "material": "Synthetic",
+      "item_name": "Amazon Brand - Symbol Men's Sneakers",
+      "product_type": "SHOES",
+      "bullet_point": "Outer Material: Synthetic | Lifestyle: Men's Casual Shoes | Product Type: Sneakers | Closure Type: Lace-Up | Toe Style: Closed Toe | Care Instructions: Allow your pair of shoes to air and de-odorize at regular basis; Using a Shoe-horn to wear your shoes will avoid damage to the back of your shoes; Use Shoe bags to prevent any stains or mildew.",
+      "image_path": "/cf/cf999d47.jpg",
+      "brand": "Amazon Brand - Symbol"
+    }
+  ]
+}
+cellular case
+{
+  "response": "It's a cellular case.",
+  "retrieved_documents": [
+    {
+      "item_id": "B07K8ZNL1C",
+      "product_type": "OFFICE_PRODUCTS",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "image_caption": "a black shelf with five shelves on top of it",
+      "image_id": "81PceOkGsfL",
+      "image_path": "/77/77c12aab.jpg"
+    },
+    {
+      "item_id": "B07F1ZB48H",
+      "product_type": "SPORTING_GOODS",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "image_caption": "[undetermined product]",
+      "image_id": "81lWZs2OGKL",
+      "image_path": "/20/20e5efdd.jpg"
+    },
+    {
+      "item_id": "B083PDT1D5",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "Snug fit for Vivo U10,  with perfect cut-outs for volume buttons,  audio and charging ports | Compatible with Vivo U10 | Durable,  soft and flexible back case,  Tear and slip-resistant | Raised upper lip build design to help protect the screen against fall on a flat surface | Protects phone from scratches,  fingerprints and sweat | Does not turn yellow after extended use",
+      "model_name": "Vivo U10",
+      "color_standardized": "clear",
+      "material": "Silicon",
+      "item_name": "Amazon Brand - Solimo Mobile Cover (Soft & Flexible Back case) for Vivo U10 (Transparent)",
+      "image_caption": "[undetermined product]",
+      "image_id": "619TIH8vqoL",
+      "image_path": "/8c/8cb49dac.jpg",
+      "brand": "Amazon Brand - Solimo"
+    }
+  ]
+}
+baby wash
+{
+  "response": "I've tried to buy a bath towel for my son. He's not satisfied with it.",
+  "retrieved_documents": [
+    {
+      "item_id": "B07K8SNQ7X",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_caption": "[undetermined product]",
+      "image_id": "81QOZCNGrpL",
+      "image_path": "/e0/e01676c1.jpg",
+      "brand": "Stone & Beam",
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel"
+    },
+    {
+      "item_id": "B07HLDKTPX",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_caption": "the white sheets are folded on top of each other sheets",
+      "image_id": "91L6xJd00jL",
+      "image_path": "/d5/d56afac4.jpg",
+      "brand": "AmazonBasics",
+      "item_name": "AmazonBasics Chambray Sheet Set"
+    },
+    {
+      "item_id": "B07F1ZB48H",
+      "product_type": "SPORTING_GOODS",
+      "image_caption": "[undetermined product]",
+      "image_id": "81lWZs2OGKL",
+      "image_path": "/20/20e5efdd.jpg",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb"
+    }
+  ]
+}
+meal
+{
+  "response": "I've tried to buy a new item for my wife. She's not satisfied with it.",
+  "retrieved_documents": [
+    {
+      "image_id": "81lWZs2OGKL",
+      "image_path": "/20/20e5efdd.jpg",
+      "item_id": "B07F1ZB48H",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "product_type": "SPORTING_GOODS",
+      "image_caption": "[undetermined product]"
+    },
+    {
+      "image_id": "81QOZCNGrpL",
+      "image_path": "/e0/e01676c1.jpg",
+      "brand": "Stone & Beam",
+      "item_id": "B07K8SNQ7X",
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_caption": "[undetermined product]"
+    },
+    {
+      "image_id": "81PceOkGsfL",
+      "image_path": "/77/77c12aab.jpg",
+      "item_id": "B07K8ZNL1C",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "product_type": "OFFICE_PRODUCTS",
+      "image_caption": "a black shelf with five shelves on top of it"
+    }
+  ]
+}
+ballet shoes
+{
+  "response": "The Flavia Women's Apricot Ballet Flats-6 UK (38 EU) (7 US) (FL-96/APC) Type: SHOES Brand: Flavia Features: Outer Material: PU | Closure Type: Slip On | Heel Type: Flats | Toe Style: Open Toe | Warranty Type: Manufacturer: Warranty Description: 45 days",
+  "retrieved_documents": [
+    {
+      "item_id": "B07ZFRX9FF",
+      "bullet_point": "Outer Material: PU | Closure Type: Slip On | Heel type: flats | Toe Style: Round Toe | Warranty Type: Manufacturer | Warranty Description: 90 days",
+      "image_caption": "a picture of a woman ' s ballet shoes",
+      "image_id": "61DJtLjAl7L",
+      "brand": "Flavia",
+      "color_standardized": "Brown",
+      "item_name": "Flavia Women's Apricot Ballet Flats-6 UK (38 EU) (7 US) (FL-96/APC)",
+      "product_type": "SHOES",
+      "image_path": "/b7/b7de52ed.jpg"
+    },
+    {
+      "item_id": "B07R79WR1Z",
+      "bullet_point": "Designed in Europe - please refer to size chart for specific measurements to achieve the perfect fit | An Amazon Brand",
+      "image_caption": "a pair of black shoes with a bow on the heel",
+      "image_id": "61MQ0G42LbL",
+      "brand": "find.",
+      "color_standardized": "Black",
+      "item_name": "Amazon Brand - find. Mini Heel Leather Ballet Closed-Toe Pumps, Black, US 5",
+      "product_type": "SHOES",
+      "image_path": "/92/9278f7d2.jpg",
+      "model_name": "119AL0075"
+    },
+    {
+      "item_id": "B08BVNLDFV",
+      "bullet_point": "Outer Material: Textile | Closure Type: Slip On | Heel type: flats | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 45 days",
+      "image_caption": "[undetermined product]",
+      "image_id": "81fQHVMoyHL",
+      "brand": "ELISE",
+      "color_standardized": "Pink",
+      "item_name": "ELISE Women's Pink Running Shoes-3 UK (36 EU) (4 US) (ES-S20-002)",
+      "product_type": "SHOES",
+      "image_path": "/41/4156f812.jpg",
+      "material": "Fabric"
+    }
+  ]
+}
+red phone case
+{
+  "response": "The red phone case is a great option for a pair of shoes.",
+  "retrieved_documents": [
+    {
+      "item_id": "B08CJ1GC5V",
+      "item_name": "Solefit Men's Red Slippers-7 UK (41 EU) (SLFT-0078)",
+      "image_caption": "a pair of red and black flip flops",
+      "image_path": "/88/886486f6.jpg",
+      "brand": "Solefit",
+      "color_standardized": "Red",
+      "product_type": "SHOES",
+      "bullet_point": "Outer Material: EVA | Closure Type: Slip On | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 30 days",
+      "image_id": "71stahIMnxL"
+    },
+    {
+      "item_id": "B07T7ZZQDY",
+      "item_name": "Amazon Brand - Solimo Designer Heart Shape Lady with Glitter 3D Printed Hard Back Case Mobile Cover for OnePlus 2",
+      "image_caption": "a phone case with a red heart on it",
+      "image_path": "/cd/cdb7a13b.jpg",
+      "brand": "Amazon Brand - Solimo",
+      "model_name": "OnePlus 2",
+      "color_standardized": "multi-colored",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "3D Printed Hard Back Case Mobile Cover for OnePlus 2 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface. | Slim Hard Back Cover | No Warranty",
+      "image_id": "71UluI9aq1L"
+    },
+    {
+      "item_id": "B07K8ZNL1C",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "image_caption": "a black shelf with five shelves on top of it",
+      "image_path": "/77/77c12aab.jpg",
+      "product_type": "OFFICE_PRODUCTS",
+      "image_id": "81PceOkGsfL"
+    }
+  ]
+}
+table
+{
+  "response": "The item is a 5 tier metal document rack. It is available in a variety of colors.",
+  "retrieved_documents": [
+    {
+      "image_path": "/77/77c12aab.jpg",
+      "item_id": "B07K8ZNL1C",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "product_type": "OFFICE_PRODUCTS",
+      "image_caption": "a black shelf with five shelves on top of it",
+      "image_id": "81PceOkGsfL"
+    },
+    {
+      "image_path": "/20/20e5efdd.jpg",
+      "item_id": "B07F1ZB48H",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "product_type": "SPORTING_GOODS",
+      "image_caption": "[undetermined product]",
+      "image_id": "81lWZs2OGKL"
+    },
+    {
+      "image_path": "/e0/e01676c1.jpg",
+      "brand": "Stone & Beam",
+      "item_id": "B07K8SNQ7X",
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_caption": "[undetermined product]",
+      "image_id": "81QOZCNGrpL"
+    }
+  ]
+}
+pet bed
+{
+  "response": "I've tried to find a pet bed for my dog. It's a good choice.",
+  "retrieved_documents": [
+    {
+      "image_caption": "a blue and white dog bed on a white background",
+      "image_id": "810GL2Z9qhL",
+      "item_id": "B07BLFFBPS",
+      "item_name": "AmazonBasics Memory Foam Dog Bed with Removable Washable Cover, 18 Inch X 28 Inch",
+      "product_type": "PET_SUPPLIES",
+      "image_path": "/7a/7a84d4c8.jpg"
+    },
+    {
+      "image_caption": "a black leather wallet with a zipper closure",
+      "image_id": "51RFLfkjsFL",
+      "brand": "Rivet",
+      "item_id": "B07CSY4N51",
+      "item_name": "Rivet Dark Grey Swatch, Rivet",
+      "product_type": "SOFA",
+      "image_path": "/8c/8c53c776.jpg"
+    },
+    {
+      "image_caption": "[undetermined product]",
+      "image_id": "81QOZCNGrpL",
+      "brand": "Stone & Beam",
+      "item_id": "B07K8SNQ7X",
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_path": "/e0/e01676c1.jpg"
+    }
+  ]
+}
+======================
+multiqa_mpnet_500
+======================
+
+
+shoes:
+{
+  "response": "I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried. I've tried to find shoes that are not as good as the ones I've tried.",
+  "retrieved_documents": [
+    {
+      "color_standardized": "Red",
+      "item_name": "Solefit Men's Red Slippers-7 UK (41 EU) (SLFT-0078)",
+      "product_type": "SHOES",
+      "image_id": "71stahIMnxL",
+      "image_path": "/88/886486f6.jpg",
+      "brand": "Solefit",
+      "item_id": "B08CJ1GC5V",
+      "bullet_point": "Outer Material: EVA | Closure Type: Slip On | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 30 days",
+      "image_caption": "a pair of red and black flip flops"
+    },
+    {
+      "color_standardized": "Pink",
+      "item_name": "ELISE Women's Pink Running Shoes-3 UK (36 EU) (4 US) (ES-S20-002)",
+      "product_type": "SHOES",
+      "image_id": "81fQHVMoyHL",
+      "image_path": "/41/4156f812.jpg",
+      "brand": "ELISE",
+      "material": "Fabric",
+      "item_id": "B08BVNLDFV",
+      "bullet_point": "Outer Material: Textile | Closure Type: Slip On | Heel type: flats | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 45 days",
+      "image_caption": "[undetermined product]"
+    },
+    {
+      "item_name": "Amazon Brand - Symbol Men's Sneakers",
+      "product_type": "SHOES",
+      "image_id": "81Pq-CBJ02L",
+      "image_path": "/cf/cf999d47.jpg",
+      "brand": "Amazon Brand - Symbol",
+      "material": "Synthetic",
+      "item_id": "B074DZ4J6R",
+      "bullet_point": "Outer Material: Synthetic | Lifestyle: Men's Casual Shoes | Product Type: Sneakers | Closure Type: Lace-Up | Toe Style: Closed Toe | Care Instructions: Allow your pair of shoes to air and de-odorize at regular basis; Using a Shoe-horn to wear your shoes will avoid damage to the back of your shoes; Use Shoe bags to prevent any stains or mildew.",
+      "image_caption": "a pair of black sneakers on a white background"
+    }
+  ]
+}
+
+cellular case:
+{
+  "response": "It's a cellular case.",
+  "retrieved_documents": [
+    {
+      "image_path": "/77/77c12aab.jpg",
+      "item_id": "B07K8ZNL1C",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "product_type": "OFFICE_PRODUCTS",
+      "image_caption": "a black shelf with five shelves on top of it",
+      "image_id": "81PceOkGsfL"
+    },
+    {
+      "image_path": "/20/20e5efdd.jpg",
+      "item_id": "B07F1ZB48H",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "product_type": "SPORTING_GOODS",
+      "image_caption": "[undetermined product]",
+      "image_id": "81lWZs2OGKL"
+    },
+    {
+      "bullet_point": "Snug fit for Vivo U10,  with perfect cut-outs for volume buttons,  audio and charging ports | Compatible with Vivo U10 | Durable,  soft and flexible back case,  Tear and slip-resistant | Raised upper lip build design to help protect the screen against fall on a flat surface | Protects phone from scratches,  fingerprints and sweat | Does not turn yellow after extended use",
+      "image_path": "/8c/8cb49dac.jpg",
+      "brand": "Amazon Brand - Solimo",
+      "color_standardized": "clear",
+      "material": "Silicon",
+      "item_id": "B083PDT1D5",
+      "item_name": "Amazon Brand - Solimo Mobile Cover (Soft & Flexible Back case) for Vivo U10 (Transparent)",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "image_caption": "[undetermined product]",
+      "image_id": "619TIH8vqoL",
+      "model_name": "Vivo U10"
+    }
+  ]
+}
+
+{
+  "response": "It's a cellular case.",
+  "retrieved_documents": [
+    {
+      "image_path": "/77/77c12aab.jpg",
+      "item_id": "B07K8ZNL1C",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "product_type": "OFFICE_PRODUCTS",
+      "image_caption": "a black shelf with five shelves on top of it",
+      "image_id": "81PceOkGsfL"
+    },
+    {
+      "image_path": "/20/20e5efdd.jpg",
+      "item_id": "B07F1ZB48H",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "product_type": "SPORTING_GOODS",
+      "image_caption": "[undetermined product]",
+      "image_id": "81lWZs2OGKL"
+    },
+    {
+      "bullet_point": "Snug fit for Vivo U10,  with perfect cut-outs for volume buttons,  audio and charging ports | Compatible with Vivo U10 | Durable,  soft and flexible back case,  Tear and slip-resistant | Raised upper lip build design to help protect the screen against fall on a flat surface | Protects phone from scratches,  fingerprints and sweat | Does not turn yellow after extended use",
+      "image_path": "/8c/8cb49dac.jpg",
+      "brand": "Amazon Brand - Solimo",
+      "color_standardized": "clear",
+      "material": "Silicon",
+      "item_id": "B083PDT1D5",
+      "item_name": "Amazon Brand - Solimo Mobile Cover (Soft & Flexible Back case) for Vivo U10 (Transparent)",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "image_caption": "[undetermined product]",
+      "image_id": "619TIH8vqoL",
+      "model_name": "Vivo U10"
+    }
+  ]
+}
+
+
+
+baby wash:
+{
+  "response": "I've tried to buy a bath towel for my son. He's not satisfied with it.",
+  "retrieved_documents": [
+    {
+      "product_type": "HOME_BED_AND_BATH",
+      "image_caption": "[undetermined product]",
+      "image_id": "81QOZCNGrpL",
+      "image_path": "/e0/e01676c1.jpg",
+      "brand": "Stone & Beam",
+      "item_id": "B07K8SNQ7X",
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel"
+    },
+    {
+      "product_type": "HOME_BED_AND_BATH",
+      "image_caption": "the white sheets are folded on top of each other sheets",
+      "image_id": "91L6xJd00jL",
+      "image_path": "/d5/d56afac4.jpg",
+      "brand": "AmazonBasics",
+      "item_id": "B07HLDKTPX",
+      "item_name": "AmazonBasics Chambray Sheet Set"
+    },
+    {
+      "product_type": "SPORTING_GOODS",
+      "image_caption": "[undetermined product]",
+      "image_id": "81lWZs2OGKL",
+      "image_path": "/20/20e5efdd.jpg",
+      "item_id": "B07F1ZB48H",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb"
+    }
+  ]
+}
+
+meal:
+{
+  "response": "I've tried to buy a new item for my wife. She's not satisfied with it.",
+  "retrieved_documents": [
+    {
+      "image_caption": "[undetermined product]",
+      "image_path": "/20/20e5efdd.jpg",
+      "item_id": "B07F1ZB48H",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "product_type": "SPORTING_GOODS",
+      "image_id": "81lWZs2OGKL"
+    },
+    {
+      "image_caption": "[undetermined product]",
+      "image_path": "/e0/e01676c1.jpg",
+      "brand": "Stone & Beam",
+      "item_id": "B07K8SNQ7X",
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_id": "81QOZCNGrpL"
+    },
+    {
+      "image_caption": "a black shelf with five shelves on top of it",
+      "image_path": "/77/77c12aab.jpg",
+      "item_id": "B07K8ZNL1C",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "product_type": "OFFICE_PRODUCTS",
+      "image_id": "81PceOkGsfL"
+    }
+  ]
+}
+
+ballet shoes:
+{
+  "response": "The Flavia Women's Apricot Ballet Flats-6 UK (38 EU) (7 US) (FL-96/APC) Type: SHOES Brand: Flavia Features: Outer Material: PU | Closure Type: Slip On | Heel Type: Flats | Toe Style: Open Toe | Warranty Type: Manufacturer: Warranty Description: 45 days",
+  "retrieved_documents": [
+    {
+      "item_id": "B07ZFRX9FF",
+      "bullet_point": "Outer Material: PU | Closure Type: Slip On | Heel type: flats | Toe Style: Round Toe | Warranty Type: Manufacturer | Warranty Description: 90 days",
+      "color_standardized": "Brown",
+      "item_name": "Flavia Women's Apricot Ballet Flats-6 UK (38 EU) (7 US) (FL-96/APC)",
+      "product_type": "SHOES",
+      "image_caption": "a picture of a woman ' s ballet shoes",
+      "image_id": "61DJtLjAl7L",
+      "image_path": "/b7/b7de52ed.jpg",
+      "brand": "Flavia"
+    },
+    {
+      "item_id": "B07R79WR1Z",
+      "bullet_point": "Designed in Europe - please refer to size chart for specific measurements to achieve the perfect fit | An Amazon Brand",
+      "model_name": "119AL0075",
+      "color_standardized": "Black",
+      "item_name": "Amazon Brand - find. Mini Heel Leather Ballet Closed-Toe Pumps, Black, US 5",
+      "product_type": "SHOES",
+      "image_caption": "a pair of black shoes with a bow on the heel",
+      "image_id": "61MQ0G42LbL",
+      "image_path": "/92/9278f7d2.jpg",
+      "brand": "find."
+    },
+    {
+      "item_id": "B08BVNLDFV",
+      "bullet_point": "Outer Material: Textile | Closure Type: Slip On | Heel type: flats | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 45 days",
+      "color_standardized": "Pink",
+      "item_name": "ELISE Women's Pink Running Shoes-3 UK (36 EU) (4 US) (ES-S20-002)",
+      "product_type": "SHOES",
+      "image_caption": "[undetermined product]",
+      "image_id": "81fQHVMoyHL",
+      "image_path": "/41/4156f812.jpg",
+      "brand": "ELISE",
+      "material": "Fabric"
+    }
+  ]
+}
+
+
+
+
+red phone case:
+{
+  "response": "The red phone case is a great option for a pair of shoes.",
+  "retrieved_documents": [
+    {
+      "image_caption": "a pair of red and black flip flops",
+      "color_standardized": "Red",
+      "item_id": "B08CJ1GC5V",
+      "item_name": "Solefit Men's Red Slippers-7 UK (41 EU) (SLFT-0078)",
+      "product_type": "SHOES",
+      "bullet_point": "Outer Material: EVA | Closure Type: Slip On | Toe Style: Open Toe | Warranty Type: Manufacturer | Warranty Description: 30 days",
+      "image_id": "71stahIMnxL",
+      "image_path": "/88/886486f6.jpg",
+      "brand": "Solefit"
+    },
+    {
+      "image_caption": "a phone case with a red heart on it",
+      "color_standardized": "multi-colored",
+      "model_name": "OnePlus 2",
+      "item_id": "B07T7ZZQDY",
+      "item_name": "Amazon Brand - Solimo Designer Heart Shape Lady with Glitter 3D Printed Hard Back Case Mobile Cover for OnePlus 2",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "3D Printed Hard Back Case Mobile Cover for OnePlus 2 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface. | Slim Hard Back Cover | No Warranty",
+      "image_id": "71UluI9aq1L",
+      "image_path": "/cd/cdb7a13b.jpg",
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "image_caption": "a black shelf with five shelves on top of it",
+      "item_id": "B07K8ZNL1C",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "product_type": "OFFICE_PRODUCTS",
+      "image_id": "81PceOkGsfL",
+      "image_path": "/77/77c12aab.jpg"
+    }
+  ]
+}
+
+table: 
+{
+  "response": "The item is a 5 tier metal document rack. It is available in a variety of colors.",
+  "retrieved_documents": [
+    {
+      "image_path": "/77/77c12aab.jpg",
+      "item_id": "B07K8ZNL1C",
+      "image_caption": "a black shelf with five shelves on top of it",
+      "image_id": "81PceOkGsfL",
+      "item_name": "AmazonBasics 5 Tier Metal Document Rack",
+      "product_type": "OFFICE_PRODUCTS"
+    },
+    {
+      "image_path": "/20/20e5efdd.jpg",
+      "item_id": "B07F1ZB48H",
+      "image_caption": "[undetermined product]",
+      "image_id": "81lWZs2OGKL",
+      "item_name": "AmazonBasics Vinyl Kettlebell 15 lb",
+      "product_type": "SPORTING_GOODS"
+    },
+    {
+      "image_path": "/e0/e01676c1.jpg",
+      "brand": "Stone & Beam",
+      "item_id": "B07K8SNQ7X",
+      "image_caption": "[undetermined product]",
+      "image_id": "81QOZCNGrpL",
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel",
+      "product_type": "HOME_BED_AND_BATH"
+    }
+  ]
+}
+
+pet bed:
+{
+  "response": "I've tried to find a pet bed for my dog. It's a good choice.",
+  "retrieved_documents": [
+    {
+      "item_id": "B07BLFFBPS",
+      "image_caption": "a blue and white dog bed on a white background",
+      "image_id": "810GL2Z9qhL",
+      "item_name": "AmazonBasics Memory Foam Dog Bed with Removable Washable Cover, 18 Inch X 28 Inch",
+      "product_type": "PET_SUPPLIES",
+      "image_path": "/7a/7a84d4c8.jpg"
+    },
+    {
+      "item_id": "B07CSY4N51",
+      "image_caption": "a black leather wallet with a zipper closure",
+      "image_id": "51RFLfkjsFL",
+      "brand": "Rivet",
+      "item_name": "Rivet Dark Grey Swatch, Rivet",
+      "product_type": "SOFA",
+      "image_path": "/8c/8c53c776.jpg"
+    },
+    {
+      "item_id": "B07K8SNQ7X",
+      "image_caption": "[undetermined product]",
+      "image_id": "81QOZCNGrpL",
+      "brand": "Stone & Beam",
+      "item_name": "Stone & Beam Casual Striped 100% Cotton Bath Towel",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_path": "/e0/e01676c1.jpg"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================
+multiqa_mpnet_30
+======================
+
+
+shoes:
+{
+  "response": "I've found shoes for women.",
+  "retrieved_documents": [
+    {
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "brand": "find.",
+      "model_name": "Slip_on",
+      "item_id": "B07NGXNPTC",
+      "product_type": "SHOES",
+      "image_id": "714fJXH7HOL",
+      "image_path": "/69/690d817e.jpg"
+    },
+    {
+      "item_name": "find. Crossover Cork Sole Leather, Womenâ€™s Flatform Sandals",
+      "image_caption": "a pair of women ' s sandals with a snake skin pattern",
+      "brand": "find.",
+      "model_name": "Crossover Cork Sole Leather",
+      "item_id": "B081DM7JZP",
+      "product_type": "SHOES",
+      "image_id": "71VEHIJlZTL",
+      "image_path": "/70/70015d20.jpg"
+    },
+    {
+      "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11",
+      "image_caption": "women ' s sneakers in grey leather with white soles",
+      "brand": "Care of by Puma",
+      "model_name": "Leather Platform Court",
+      "item_id": "B07XTPN3HT",
+      "product_type": "SHOES",
+      "image_id": "71W7h69QPRL",
+      "image_path": "/24/24ece65e.jpg",
+      "color_standardized": "Grey"
+    }
+  ]
+}
+
+cellular case:
+{
+  "response": "It's a cellular case.",
+  "retrieved_documents": [
+    {
+      "image_path": "/c3/c3406c06.jpg",
+      "color_standardized": "multi-colored",
+      "item_name": "Amazon Brand - Solimo Designer Lighting 3D Printed Hard Back Case Mobile Cover for Vivo V1 Max",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "3D Printed Hard Back Case Mobile Cover for Vivo V1 Max | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface. | Slim Hard Back Cover | No Warranty",
+      "image_caption": "a phone case with christmas lights on it",
+      "image_id": "71bcNwxkB7L",
+      "brand": "Amazon Brand - Solimo",
+      "model_name": "Vivo V1 Max",
+      "item_id": "B07T7ZY6P6"
+    },
+    {
+      "image_path": "/ee/eea6cb50.jpg",
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "product_type": "EARRING",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings",
+      "image_id": "71u1Yz5iwIL",
+      "item_id": "B01CNMKZNE"
+    },
+    {
+      "image_path": "/a7/a7270e7a.jpg",
+      "color_standardized": "multi-colored",
+      "material": "Silicon",
+      "item_name": "Amazon Brand - Solimo Designer Red Moon UV Printed Soft Back Case Mobile Cover for Lava Z61",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "Snug fit for Lava Z61, with perfect cut-outs for volume buttons, audio and charging ports | Compatible with Lava Z61 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface.",
+      "image_caption": "a phone case with the silhouette of a red moon on a black background",
+      "image_id": "616ZijT0A5L",
+      "brand": "Amazon Brand - Solimo",
+      "model_name": "Lava Z61",
+      "item_id": "B0853X5SQ5"
+    }
+  ]
+}
+
+
+
+baby wash:
+{
+  "response": "I've tried solimo Deep Moisturizing Baby Wash, 13 Fluid Ounce.",
+  "retrieved_documents": [
+    {
+      "image_id": "71byIpH+1LL",
+      "image_path": "/87/87868d71.jpg",
+      "product_type": "SKIN_CLEANING_AGENT",
+      "item_name": "Amazon Brand - Solimo Deep Moisturizing Baby Wash, 13 Fluid Ounce",
+      "bullet_point": "One 13-fluid ounce bottle of deep moisturizing baby wash | Tear-free | Pediatrician tested | Directions: Dispense onto a wet washcloth or your hands. Apply to skin and hair. Lather and rinse | Each bottle comes with a pump dispenser top | If you like Baby Dove Tip to Toe Wash, we invite you to try Solimo Deep Moisturizing Baby Wash | Satisfaction Guarantee: We're proud of our products. If you aren't satisfied, we'll refund you for any reason within a year of purchase. 1-877-485-0385 | An Amazon brand",
+      "image_caption": "a bottle of soap on a white background",
+      "brand": "Solimo",
+      "item_id": "B07VTCS9DQ"
+    },
+    {
+      "image_id": "810iH82SMKL",
+      "image_path": "/f0/f0f82cfb.jpg",
+      "product_type": "HOME_BED_AND_BATH",
+      "item_name": "AmazonBasics Non-Slip Bathroom Bath Rug Mat with Textured Waves",
+      "image_caption": "a white bath mat on a white background",
+      "brand": "AmazonBasics",
+      "item_id": "B07N6V9Z41"
+    },
+    {
+      "image_id": "714fJXH7HOL",
+      "image_path": "/69/690d817e.jpg",
+      "product_type": "SHOES",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "brand": "find.",
+      "model_name": "Slip_on",
+      "item_id": "B07NGXNPTC"
+    }
+  ]
+}
+
+meal:
+{
+  "response": "I've tried to find a pair of shoes for my boyfriend.",
+  "retrieved_documents": [
+    {
+      "item_name": "AmazonBasics - Privacy Filters",
+      "product_type": "OFFICE_ELECTRONICS",
+      "image_id": "61Bj5tY+KDL",
+      "item_id": "B07PRBRD85",
+      "image_caption": "a laptop with a screen on top of it",
+      "image_path": "/41/41e08cd0.jpg"
+    },
+    {
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "product_type": "EARRING",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "image_id": "71u1Yz5iwIL",
+      "item_id": "B01CNMKZNE",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings",
+      "image_path": "/ee/eea6cb50.jpg"
+    },
+    {
+      "model_name": "Slip_on",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "product_type": "SHOES",
+      "image_id": "714fJXH7HOL",
+      "brand": "find.",
+      "item_id": "B07NGXNPTC",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_path": "/69/690d817e.jpg"
+    }
+  ]
+}
+
+ballet shoes:
+{
+  "response": "I've found shoes that are very good for the price.",
+  "retrieved_documents": [
+    {
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_id": "714fJXH7HOL",
+      "image_path": "/69/690d817e.jpg",
+      "model_name": "Slip_on",
+      "item_id": "B07NGXNPTC",
+      "product_type": "SHOES",
+      "brand": "find."
+    },
+    {
+      "item_name": "206 Collective Women's Mercer Dress Pump, silver/metallic leather, 5.5 C/D US",
+      "image_caption": "a pair of black and silver shoes",
+      "image_id": "81CFtX0XzsL",
+      "image_path": "/9b/9b40513c.jpg",
+      "model_name": "Mercer Dress Pump",
+      "item_id": "B0789V16ZR",
+      "product_type": "SHOES",
+      "bullet_point": "Mercer Dress Pump | Mercer Dress Pump",
+      "brand": "206 Collective",
+      "color_standardized": "Silver"
+    },
+    {
+      "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11",
+      "image_caption": "women ' s sneakers in grey leather with white soles",
+      "image_id": "71W7h69QPRL",
+      "image_path": "/24/24ece65e.jpg",
+      "model_name": "Leather Platform Court",
+      "item_id": "B07XTPN3HT",
+      "product_type": "SHOES",
+      "brand": "Care of by Puma",
+      "color_standardized": "Grey"
+    }
+  ]
+}
+
+
+
+
+red phone case:
+{
+  "response": "The red phone case is a great gift for anyone who is looking for a gift for a lover.",
+  "retrieved_documents": [
+    {
+      "item_id": "B0853X5SQ5",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "image_path": "/a7/a7270e7a.jpg",
+      "brand": "Amazon Brand - Solimo",
+      "model_name": "Lava Z61",
+      "material": "Silicon",
+      "item_name": "Amazon Brand - Solimo Designer Red Moon UV Printed Soft Back Case Mobile Cover for Lava Z61",
+      "bullet_point": "Snug fit for Lava Z61, with perfect cut-outs for volume buttons, audio and charging ports | Compatible with Lava Z61 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface.",
+      "image_caption": "a phone case with the silhouette of a red moon on a black background",
+      "image_id": "616ZijT0A5L",
+      "color_standardized": "multi-colored"
+    },
+    {
+      "item_id": "B01CNMKZNE",
+      "product_type": "EARRING",
+      "image_path": "/ee/eea6cb50.jpg",
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings",
+      "image_id": "71u1Yz5iwIL"
+    },
+    {
+      "item_id": "B07NGXNPTC",
+      "product_type": "SHOES",
+      "image_path": "/69/690d817e.jpg",
+      "brand": "find.",
+      "model_name": "Slip_on",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_id": "714fJXH7HOL"
+    }
+  ]
+}
+
+table:
+{
+  "response": "The Rivet Mid-Century Modern Round Black Wood Nesting Side End Table, 15.7\" W, Dark Oak Type: TABLE Brand: Rivet",
+  "retrieved_documents": [
+    {
+      "product_type": "OFFICE_ELECTRONICS",
+      "item_id": "B07PRBRD85",
+      "item_name": "AmazonBasics - Privacy Filters",
+      "image_caption": "a laptop with a screen on top of it",
+      "image_id": "61Bj5tY+KDL",
+      "image_path": "/41/41e08cd0.jpg"
+    },
+    {
+      "product_type": "EARRING",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "item_id": "B01CNMKZNE",
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings",
+      "image_id": "71u1Yz5iwIL",
+      "image_path": "/ee/eea6cb50.jpg"
+    },
+    {
+      "product_type": "TABLE",
+      "bullet_point": "Suited for small spaces, each table is sold individually so it can be used on its own or nested as a pair. Park your remote control as you watch TV or use to serve snacks at your next party - they're just what you need beside your sofa or chair. | 15.7\" Diameter x 18.1\"H | Solid hardwood with dark oak finish | Each round modern table has a classic look to blend with traditional and modern dÃ©cor. | Ideal for a tight corner next to a sofa, or for serving drinks and snacks | No assembly required. Wipe with soft dry cloth. | Free returns for 30 days. 1-year warranty.",
+      "brand": "Rivet",
+      "material": "wood",
+      "item_id": "B072ZKPK7J",
+      "item_name": "Amazon Brand â€“ Rivet Mid-Century Modern Round Black Wood Nesting Side End Table, 15.7\" W, Dark Oak",
+      "image_caption": "the side table is made from wood and has a black finish",
+      "image_id": "81YAPPy05EL",
+      "image_path": "/2b/2ba81345.jpg",
+      "color_standardized": "Brown"
+    }
+  ]
+}
+
+pet bed:
+{
+  "response": "The shit on the bed is a great option for a pet bed.",
+  "retrieved_documents": [
+    {
+      "item_name": "AmazonBasics Warming Pet Bed 22-Inch DF2018203M",
+      "product_type": "PET_SUPPLIES",
+      "material": "Faux sherpa fleece; Supple corduroy",
+      "item_id": "B07FD7KTJX",
+      "bullet_point": "Plush self-warming pet bed for dogs and cats | Made with the same technology as self-warming mylar \"space blankets\" | Effectively retains and reflects your pets's body heat | Covered in faux sherpa fleece and supple corduroy | No electricity required",
+      "image_caption": "a small dog sitting in a small dog bed",
+      "image_id": "61r9T3tq6ZL",
+      "image_path": "/1f/1f9388d8.jpg",
+      "brand": "AmazonBasics"
+    },
+    {
+      "item_name": "AmazonBasics - Privacy Filters",
+      "product_type": "OFFICE_ELECTRONICS",
+      "item_id": "B07PRBRD85",
+      "image_caption": "a laptop with a screen on top of it",
+      "image_id": "61Bj5tY+KDL",
+      "image_path": "/41/41e08cd0.jpg"
+    },
+    {
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "product_type": "SHOES",
+      "item_id": "B07NGXNPTC",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_id": "714fJXH7HOL",
+      "image_path": "/69/690d817e.jpg",
+      "brand": "find.",
+      "model_name": "Slip_on"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================
+e5_large_model_30
+======================
+
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=e5_large_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "shoes"
+}'
+
+{
+  "response": "I've found shoes for women.",
+  "retrieved_documents": [
+    {
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "product_type": "SHOES",
+      "image_id": "714fJXH7HOL",
+      "model_name": "Slip_on",
+      "item_id": "B07NGXNPTC",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_path": "/69/690d817e.jpg",
+      "brand": "find."
+    },
+    {
+      "item_name": "find. Crossover Cork Sole Leather, Womenâ€™s Flatform Sandals",
+      "product_type": "SHOES",
+      "image_id": "71VEHIJlZTL",
+      "model_name": "Crossover Cork Sole Leather",
+      "item_id": "B081DM7JZP",
+      "image_caption": "a pair of women ' s sandals with a snake skin pattern",
+      "image_path": "/70/70015d20.jpg",
+      "brand": "find."
+    },
+    {
+      "color_standardized": "Grey",
+      "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11",
+      "product_type": "SHOES",
+      "image_id": "71W7h69QPRL",
+      "model_name": "Leather Platform Court",
+      "item_id": "B07XTPN3HT",
+      "image_caption": "women ' s sneakers in grey leather with white soles",
+      "image_path": "/24/24ece65e.jpg",
+      "brand": "Care of by Puma"
+    }
+  ]
+}
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=e5_large_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "cellular case"
+}'
+{
+  "response": "It's a cellular case.",
+  "retrieved_documents": [
+    {
+      "image_id": "71bcNwxkB7L",
+      "image_path": "/c3/c3406c06.jpg",
+      "color_standardized": "multi-colored",
+      "item_id": "B07T7ZY6P6",
+      "item_name": "Amazon Brand - Solimo Designer Lighting 3D Printed Hard Back Case Mobile Cover for Vivo V1 Max",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "3D Printed Hard Back Case Mobile Cover for Vivo V1 Max | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface. | Slim Hard Back Cover | No Warranty",
+      "image_caption": "a phone case with christmas lights on it",
+      "brand": "Amazon Brand - Solimo",
+      "model_name": "Vivo V1 Max"
+    },
+    {
+      "image_id": "71u1Yz5iwIL",
+      "image_path": "/ee/eea6cb50.jpg",
+      "item_id": "B01CNMKZNE",
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "product_type": "EARRING",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings"
+    },
+    {
+      "image_id": "616ZijT0A5L",
+      "image_path": "/a7/a7270e7a.jpg",
+      "color_standardized": "multi-colored",
+      "item_id": "B0853X5SQ5",
+      "item_name": "Amazon Brand - Solimo Designer Red Moon UV Printed Soft Back Case Mobile Cover for Lava Z61",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "Snug fit for Lava Z61, with perfect cut-outs for volume buttons, audio and charging ports | Compatible with Lava Z61 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface.",
+      "material": "Silicon",
+      "image_caption": "a phone case with the silhouette of a red moon on a black background",
+      "brand": "Amazon Brand - Solimo",
+      "model_name": "Lava Z61"
+    }
+  ]
+}
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=e5_large_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "baby wash"
+}'
+{
+  "response": "I've tried solimo Deep Moisturizing Baby Wash, 13 Fluid Ounce.",
+  "retrieved_documents": [
+    {
+      "item_id": "B07VTCS9DQ",
+      "item_name": "Amazon Brand - Solimo Deep Moisturizing Baby Wash, 13 Fluid Ounce",
+      "product_type": "SKIN_CLEANING_AGENT",
+      "image_id": "71byIpH+1LL",
+      "image_path": "/87/87868d71.jpg",
+      "brand": "Solimo",
+      "bullet_point": "One 13-fluid ounce bottle of deep moisturizing baby wash | Tear-free | Pediatrician tested | Directions: Dispense onto a wet washcloth or your hands. Apply to skin and hair. Lather and rinse | Each bottle comes with a pump dispenser top | If you like Baby Dove Tip to Toe Wash, we invite you to try Solimo Deep Moisturizing Baby Wash | Satisfaction Guarantee: We're proud of our products. If you aren't satisfied, we'll refund you for any reason within a year of purchase. 1-877-485-0385 | An Amazon brand",
+      "image_caption": "a bottle of soap on a white background"
+    },
+    {
+      "item_id": "B07N6V9Z41",
+      "item_name": "AmazonBasics Non-Slip Bathroom Bath Rug Mat with Textured Waves",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_id": "810iH82SMKL",
+      "image_path": "/f0/f0f82cfb.jpg",
+      "brand": "AmazonBasics",
+      "image_caption": "a white bath mat on a white background"
+    },
+    {
+      "item_id": "B07NGXNPTC",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "product_type": "SHOES",
+      "image_id": "714fJXH7HOL",
+      "image_path": "/69/690d817e.jpg",
+      "brand": "find.",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "model_name": "Slip_on"
+    }
+  ]
+}
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=e5_large_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "meal"
+}'
+{
+  "response": "I've tried to find a pair of shoes for my boyfriend.",
+  "retrieved_documents": [
+    {
+      "item_id": "B07PRBRD85",
+      "item_name": "AmazonBasics - Privacy Filters",
+      "image_caption": "a laptop with a screen on top of it",
+      "image_id": "61Bj5tY+KDL",
+      "product_type": "OFFICE_ELECTRONICS",
+      "image_path": "/41/41e08cd0.jpg"
+    },
+    {
+      "item_id": "B01CNMKZNE",
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings",
+      "image_id": "71u1Yz5iwIL",
+      "product_type": "EARRING",
+      "image_path": "/ee/eea6cb50.jpg"
+    },
+    {
+      "item_id": "B07NGXNPTC",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_id": "714fJXH7HOL",
+      "brand": "find.",
+      "product_type": "SHOES",
+      "image_path": "/69/690d817e.jpg",
+      "model_name": "Slip_on"
+    }
+  ]
+}
+
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=e5_large_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "ballet shoes"
+}'
+
+{
+  "response": "I've found shoes that are very good for the price.",
+  "retrieved_documents": [
+    {
+      "product_type": "SHOES",
+      "image_id": "714fJXH7HOL",
+      "image_path": "/69/690d817e.jpg",
+      "brand": "find.",
+      "model_name": "Slip_on",
+      "item_id": "B07NGXNPTC",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "image_caption": "women ' s sandals in beige leather with leather soles"
+    },
+    {
+      "product_type": "SHOES",
+      "image_id": "81CFtX0XzsL",
+      "image_path": "/9b/9b40513c.jpg",
+      "brand": "206 Collective",
+      "model_name": "Mercer Dress Pump",
+      "item_id": "B0789V16ZR",
+      "item_name": "206 Collective Women's Mercer Dress Pump, silver/metallic leather, 5.5 C/D US",
+      "bullet_point": "Mercer Dress Pump | Mercer Dress Pump",
+      "image_caption": "a pair of black and silver shoes",
+      "color_standardized": "Silver"
+    },
+    {
+      "product_type": "SHOES",
+      "image_id": "71W7h69QPRL",
+      "image_path": "/24/24ece65e.jpg",
+      "brand": "Care of by Puma",
+      "model_name": "Leather Platform Court",
+      "item_id": "B07XTPN3HT",
+      "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11",
+      "image_caption": "women ' s sneakers in grey leather with white soles",
+      "color_standardized": "Grey"
+    }
+  ]
+}
+
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=e5_large_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "red phone case"
+}'
+{
+  "response": "The red phone case is a great gift for anyone who is looking for a gift for a lover.",
+  "retrieved_documents": [
+    {
+      "brand": "Amazon Brand - Solimo",
+      "color_standardized": "multi-colored",
+      "material": "Silicon",
+      "bullet_point": "Snug fit for Lava Z61, with perfect cut-outs for volume buttons, audio and charging ports | Compatible with Lava Z61 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface.",
+      "image_caption": "a phone case with the silhouette of a red moon on a black background",
+      "image_id": "616ZijT0A5L",
+      "model_name": "Lava Z61",
+      "item_id": "B0853X5SQ5",
+      "item_name": "Amazon Brand - Solimo Designer Red Moon UV Printed Soft Back Case Mobile Cover for Lava Z61",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "image_path": "/a7/a7270e7a.jpg"
+    },
+    {
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings",
+      "image_id": "71u1Yz5iwIL",
+      "item_id": "B01CNMKZNE",
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "product_type": "EARRING",
+      "image_path": "/ee/eea6cb50.jpg"
+    },
+    {
+      "brand": "find.",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_id": "714fJXH7HOL",
+      "model_name": "Slip_on",
+      "item_id": "B07NGXNPTC",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "product_type": "SHOES",
+      "image_path": "/69/690d817e.jpg"
+    }
+  ]
+}
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=e5_large_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "table"
+}'
+{
+  "response": "The Rivet Mid-Century Modern Round Black Wood Nesting Side End Table, 15.7\" W, Dark Oak Type: TABLE Brand: Rivet",
+  "retrieved_documents": [
+    {
+      "item_name": "AmazonBasics - Privacy Filters",
+      "image_id": "61Bj5tY+KDL",
+      "image_path": "/41/41e08cd0.jpg",
+      "item_id": "B07PRBRD85",
+      "product_type": "OFFICE_ELECTRONICS",
+      "image_caption": "a laptop with a screen on top of it"
+    },
+    {
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "image_id": "71u1Yz5iwIL",
+      "image_path": "/ee/eea6cb50.jpg",
+      "item_id": "B01CNMKZNE",
+      "product_type": "EARRING",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings"
+    },
+    {
+      "material": "wood",
+      "item_name": "Amazon Brand â€“ Rivet Mid-Century Modern Round Black Wood Nesting Side End Table, 15.7\" W, Dark Oak",
+      "bullet_point": "Suited for small spaces, each table is sold individually so it can be used on its own or nested as a pair. Park your remote control as you watch TV or use to serve snacks at your next party - they're just what you need beside your sofa or chair. | 15.7\" Diameter x 18.1\"H | Solid hardwood with dark oak finish | Each round modern table has a classic look to blend with traditional and modern dÃ©cor. | Ideal for a tight corner next to a sofa, or for serving drinks and snacks | No assembly required. Wipe with soft dry cloth. | Free returns for 30 days. 1-year warranty.",
+      "image_id": "81YAPPy05EL",
+      "image_path": "/2b/2ba81345.jpg",
+      "color_standardized": "Brown",
+      "item_id": "B072ZKPK7J",
+      "product_type": "TABLE",
+      "image_caption": "the side table is made from wood and has a black finish",
+      "brand": "Rivet"
+    }
+  ]
+}
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=e5_large_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "pet bed"
+}'
+{
+  "response": "The shit on the bed is a great option for a pet bed.",
+  "retrieved_documents": [
+    {
+      "item_id": "B07FD7KTJX",
+      "item_name": "AmazonBasics Warming Pet Bed 22-Inch DF2018203M",
+      "image_caption": "a small dog sitting in a small dog bed",
+      "image_path": "/1f/1f9388d8.jpg",
+      "brand": "AmazonBasics",
+      "material": "Faux sherpa fleece; Supple corduroy",
+      "product_type": "PET_SUPPLIES",
+      "bullet_point": "Plush self-warming pet bed for dogs and cats | Made with the same technology as self-warming mylar \"space blankets\" | Effectively retains and reflects your pets's body heat | Covered in faux sherpa fleece and supple corduroy | No electricity required",
+      "image_id": "61r9T3tq6ZL"
+    },
+    {
+      "item_id": "B07PRBRD85",
+      "item_name": "AmazonBasics - Privacy Filters",
+      "image_caption": "a laptop with a screen on top of it",
+      "image_path": "/41/41e08cd0.jpg",
+      "product_type": "OFFICE_ELECTRONICS",
+      "image_id": "61Bj5tY+KDL"
+    },
+    {
+      "item_id": "B07NGXNPTC",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_path": "/69/690d817e.jpg",
+      "brand": "find.",
+      "model_name": "Slip_on",
+      "product_type": "SHOES",
+      "image_id": "714fJXH7HOL"
+    }
+  ]
+}
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=e5_large_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "bathroom mat"
+}'
+
+{
+  "response": "The bathroom mat is made of a non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-slip, non-",
+  "retrieved_documents": [
+    {
+      "item_name": "AmazonBasics Non-Slip Bathroom Bath Rug Mat with Textured Waves",
+      "image_caption": "a white bath mat on a white background",
+      "image_path": "/f0/f0f82cfb.jpg",
+      "brand": "AmazonBasics",
+      "image_id": "810iH82SMKL",
+      "item_id": "B07N6V9Z41",
+      "product_type": "HOME_BED_AND_BATH"
+    },
+    {
+      "item_name": "AmazonBasics Body Weight Scale with BMI Technology - Auto On/Off Function, Black",
+      "image_caption": "a black bathroom scale with a white background",
+      "image_path": "/39/39c5c4a9.jpg",
+      "brand": "AmazonBasics",
+      "image_id": "610BuIE2DKL",
+      "model_name": "GBS-1319",
+      "color_standardized": "Black",
+      "item_id": "B07WC1SZXX",
+      "product_type": "WEIGH_SCALE",
+      "bullet_point": "Product dimensions: 1.97 inches (H) x 12.99 inches (L) x 13.46 inches (W) | Country of Origin: China"
+    },
+    {
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings",
+      "image_path": "/ee/eea6cb50.jpg",
+      "image_id": "71u1Yz5iwIL",
+      "item_id": "B01CNMKZNE",
+      "product_type": "EARRING",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported."
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================
+bge_small_30
+======================
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=bge_small_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "shoes"
+}'
+{
+  "response": "I've found shoes for women.",
+  "retrieved_documents": [
+    {
+      "brand": "find.",
+      "item_id": "B07NGXNPTC",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "product_type": "SHOES",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_id": "714fJXH7HOL",
+      "image_path": "/69/690d817e.jpg",
+      "model_name": "Slip_on"
+    },
+    {
+      "brand": "find.",
+      "item_id": "B081DM7JZP",
+      "item_name": "find. Crossover Cork Sole Leather, Womenâ€™s Flatform Sandals",
+      "product_type": "SHOES",
+      "image_caption": "a pair of women ' s sandals with a snake skin pattern",
+      "image_id": "71VEHIJlZTL",
+      "image_path": "/70/70015d20.jpg",
+      "model_name": "Crossover Cork Sole Leather"
+    },
+    {
+      "brand": "Care of by Puma",
+      "color_standardized": "Grey",
+      "item_id": "B07XTPN3HT",
+      "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11",
+      "product_type": "SHOES",
+      "image_caption": "women ' s sneakers in grey leather with white soles",
+      "image_id": "71W7h69QPRL",
+      "image_path": "/24/24ece65e.jpg",
+      "model_name": "Leather Platform Court"
+    }
+  ]
+}
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=bge_small_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "cellular case"
+}'
+{
+  "response": "It's a cellular case.",
+  "retrieved_documents": [
+    {
+      "image_caption": "a phone case with christmas lights on it",
+      "image_id": "71bcNwxkB7L",
+      "model_name": "Vivo V1 Max",
+      "item_id": "B07T7ZY6P6",
+      "item_name": "Amazon Brand - Solimo Designer Lighting 3D Printed Hard Back Case Mobile Cover for Vivo V1 Max",
+      "image_path": "/c3/c3406c06.jpg",
+      "brand": "Amazon Brand - Solimo",
+      "color_standardized": "multi-colored",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "3D Printed Hard Back Case Mobile Cover for Vivo V1 Max | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface. | Slim Hard Back Cover | No Warranty"
+    },
+    {
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings",
+      "image_id": "71u1Yz5iwIL",
+      "item_id": "B01CNMKZNE",
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "image_path": "/ee/eea6cb50.jpg",
+      "product_type": "EARRING",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported."
+    },
+    {
+      "image_caption": "a phone case with the silhouette of a red moon on a black background",
+      "image_id": "616ZijT0A5L",
+      "model_name": "Lava Z61",
+      "item_id": "B0853X5SQ5",
+      "item_name": "Amazon Brand - Solimo Designer Red Moon UV Printed Soft Back Case Mobile Cover for Lava Z61",
+      "image_path": "/a7/a7270e7a.jpg",
+      "brand": "Amazon Brand - Solimo",
+      "color_standardized": "multi-colored",
+      "material": "Silicon",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "bullet_point": "Snug fit for Lava Z61, with perfect cut-outs for volume buttons, audio and charging ports | Compatible with Lava Z61 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface."
+    }
+  ]
+}
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=bge_small_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "baby wash"
+}'
+
+
+
+{
+  "response": "I've tried solimo Deep Moisturizing Baby Wash, 13 Fluid Ounce.",
+  "retrieved_documents": [
+    {
+      "item_id": "B07VTCS9DQ",
+      "item_name": "Amazon Brand - Solimo Deep Moisturizing Baby Wash, 13 Fluid Ounce",
+      "bullet_point": "One 13-fluid ounce bottle of deep moisturizing baby wash | Tear-free | Pediatrician tested | Directions: Dispense onto a wet washcloth or your hands. Apply to skin and hair. Lather and rinse | Each bottle comes with a pump dispenser top | If you like Baby Dove Tip to Toe Wash, we invite you to try Solimo Deep Moisturizing Baby Wash | Satisfaction Guarantee: We're proud of our products. If you aren't satisfied, we'll refund you for any reason within a year of purchase. 1-877-485-0385 | An Amazon brand",
+      "product_type": "SKIN_CLEANING_AGENT",
+      "image_caption": "a bottle of soap on a white background",
+      "image_id": "71byIpH+1LL",
+      "image_path": "/87/87868d71.jpg",
+      "brand": "Solimo"
+    },
+    {
+      "item_id": "B07N6V9Z41",
+      "item_name": "AmazonBasics Non-Slip Bathroom Bath Rug Mat with Textured Waves",
+      "product_type": "HOME_BED_AND_BATH",
+      "image_caption": "a white bath mat on a white background",
+      "image_id": "810iH82SMKL",
+      "image_path": "/f0/f0f82cfb.jpg",
+      "brand": "AmazonBasics"
+    },
+    {
+      "item_id": "B07NGXNPTC",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "model_name": "Slip_on",
+      "product_type": "SHOES",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_id": "714fJXH7HOL",
+      "image_path": "/69/690d817e.jpg",
+      "brand": "find."
+    }
+  ]
+}
+
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=bge_small_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "meal"
+}'
+{
+  "response": "I've tried to find a pair of shoes for my boyfriend.",
+  "retrieved_documents": [
+    {
+      "image_id": "61Bj5tY+KDL",
+      "image_caption": "a laptop with a screen on top of it",
+      "product_type": "OFFICE_ELECTRONICS",
+      "image_path": "/41/41e08cd0.jpg",
+      "item_id": "B07PRBRD85",
+      "item_name": "AmazonBasics - Privacy Filters"
+    },
+    {
+      "image_id": "71u1Yz5iwIL",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings",
+      "product_type": "EARRING",
+      "image_path": "/ee/eea6cb50.jpg",
+      "item_id": "B01CNMKZNE",
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)"
+    },
+    {
+      "image_id": "714fJXH7HOL",
+      "brand": "find.",
+      "model_name": "Slip_on",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "product_type": "SHOES",
+      "image_path": "/69/690d817e.jpg",
+      "item_id": "B07NGXNPTC",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles"
+    }
+  ]
+}
+
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=bge_small_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "ballet shoes"
+}'
+
+{
+  "response": "I've found shoes that are very good for the price.",
+  "retrieved_documents": [
+    {
+      "item_id": "B07NGXNPTC",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_path": "/69/690d817e.jpg",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "product_type": "SHOES",
+      "image_id": "714fJXH7HOL",
+      "brand": "find.",
+      "model_name": "Slip_on"
+    },
+    {
+      "item_id": "B0789V16ZR",
+      "image_caption": "a pair of black and silver shoes",
+      "image_path": "/9b/9b40513c.jpg",
+      "color_standardized": "Silver",
+      "item_name": "206 Collective Women's Mercer Dress Pump, silver/metallic leather, 5.5 C/D US",
+      "product_type": "SHOES",
+      "bullet_point": "Mercer Dress Pump | Mercer Dress Pump",
+      "image_id": "81CFtX0XzsL",
+      "brand": "206 Collective",
+      "model_name": "Mercer Dress Pump"
+    },
+    {
+      "item_id": "B07XTPN3HT",
+      "image_caption": "women ' s sneakers in grey leather with white soles",
+      "image_path": "/24/24ece65e.jpg",
+      "color_standardized": "Grey",
+      "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11",
+      "product_type": "SHOES",
+      "image_id": "71W7h69QPRL",
+      "brand": "Care of by Puma",
+      "model_name": "Leather Platform Court"
+    }
+  ]
+}
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=bge_small_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "red phone case"
+}'
+{
+  "response": "The red phone case is a great gift for anyone who is looking for a gift for a lover.",
+  "retrieved_documents": [
+    {
+      "image_id": "616ZijT0A5L",
+      "image_path": "/a7/a7270e7a.jpg",
+      "model_name": "Lava Z61",
+      "product_type": "CELLULAR_PHONE_CASE",
+      "item_name": "Amazon Brand - Solimo Designer Red Moon UV Printed Soft Back Case Mobile Cover for Lava Z61",
+      "bullet_point": "Snug fit for Lava Z61, with perfect cut-outs for volume buttons, audio and charging ports | Compatible with Lava Z61 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface.",
+      "image_caption": "a phone case with the silhouette of a red moon on a black background",
+      "brand": "Amazon Brand - Solimo",
+      "color_standardized": "multi-colored",
+      "material": "Silicon",
+      "item_id": "B0853X5SQ5"
+    },
+    {
+      "image_id": "71u1Yz5iwIL",
+      "image_path": "/ee/eea6cb50.jpg",
+      "product_type": "EARRING",
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings",
+      "item_id": "B01CNMKZNE"
+    },
+    {
+      "image_id": "714fJXH7HOL",
+      "image_path": "/69/690d817e.jpg",
+      "model_name": "Slip_on",
+      "product_type": "SHOES",
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "brand": "find.",
+      "item_id": "B07NGXNPTC"
+    }
+  ]
+}
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=bge_small_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "table"
+}'
+{
+  "response": "The Rivet Mid-Century Modern Round Black Wood Nesting Side End Table, 15.7\" W, Dark Oak Type: TABLE Brand: Rivet",
+  "retrieved_documents": [
+    {
+      "item_id": "B07PRBRD85",
+      "image_id": "61Bj5tY+KDL",
+      "image_path": "/41/41e08cd0.jpg",
+      "item_name": "AmazonBasics - Privacy Filters",
+      "product_type": "OFFICE_ELECTRONICS",
+      "image_caption": "a laptop with a screen on top of it"
+    },
+    {
+      "item_id": "B01CNMKZNE",
+      "bullet_point": "Your special day gift to a lover or your family and friends. | Picture is the actual color and texture might be slightly different from the size above. Thanks for your understanding. | Imported.",
+      "image_id": "71u1Yz5iwIL",
+      "image_path": "/ee/eea6cb50.jpg",
+      "item_name": "Amazon Collection (Find) Platinum Plated Freshwater Cultured Pearl suta-ringusiruba-suwarohusuki-zirukonia pa-ruassya-kattohu-pupiasu (1Â 1/2Â cttw)",
+      "product_type": "EARRING",
+      "image_caption": "a set of three pairs of pearl and crystal hoop earrings"
+    },
+    {
+      "brand": "Rivet",
+      "material": "wood",
+      "item_id": "B072ZKPK7J",
+      "bullet_point": "Suited for small spaces, each table is sold individually so it can be used on its own or nested as a pair. Park your remote control as you watch TV or use to serve snacks at your next party - they're just what you need beside your sofa or chair. | 15.7\" Diameter x 18.1\"H | Solid hardwood with dark oak finish | Each round modern table has a classic look to blend with traditional and modern dÃ©cor. | Ideal for a tight corner next to a sofa, or for serving drinks and snacks | No assembly required. Wipe with soft dry cloth. | Free returns for 30 days. 1-year warranty.",
+      "image_id": "81YAPPy05EL",
+      "image_path": "/2b/2ba81345.jpg",
+      "color_standardized": "Brown",
+      "item_name": "Amazon Brand â€“ Rivet Mid-Century Modern Round Black Wood Nesting Side End Table, 15.7\" W, Dark Oak",
+      "product_type": "TABLE",
+      "image_caption": "the side table is made from wood and has a black finish"
+    }
+  ]
+}
+
+curl -X 'POST' \
+  'http://127.0.0.1:8080/rag/query?collection_name=bge_small_model' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "pet bed"
+}'
+{
+  "response": "The shit on the bed is a great option for a pet bed.",
+  "retrieved_documents": [
+    {
+      "item_name": "AmazonBasics Warming Pet Bed 22-Inch DF2018203M",
+      "product_type": "PET_SUPPLIES",
+      "image_caption": "a small dog sitting in a small dog bed",
+      "image_path": "/1f/1f9388d8.jpg",
+      "material": "Faux sherpa fleece; Supple corduroy",
+      "item_id": "B07FD7KTJX",
+      "bullet_point": "Plush self-warming pet bed for dogs and cats | Made with the same technology as self-warming mylar \"space blankets\" | Effectively retains and reflects your pets's body heat | Covered in faux sherpa fleece and supple corduroy | No electricity required",
+      "image_id": "61r9T3tq6ZL",
+      "brand": "AmazonBasics"
+    },
+    {
+      "item_name": "AmazonBasics - Privacy Filters",
+      "product_type": "OFFICE_ELECTRONICS",
+      "image_caption": "a laptop with a screen on top of it",
+      "image_path": "/41/41e08cd0.jpg",
+      "item_id": "B07PRBRD85",
+      "image_id": "61Bj5tY+KDL"
+    },
+    {
+      "item_name": "Amazon Brand - find. Slip_on, Menâ€™s Espadrilles",
+      "product_type": "SHOES",
+      "image_caption": "women ' s sandals in beige leather with leather soles",
+      "image_path": "/69/690d817e.jpg",
+      "item_id": "B07NGXNPTC",
+      "image_id": "714fJXH7HOL",
+      "brand": "find.",
+      "model_name": "Slip_on"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==========================
+miniLM": "sentence-transformers/all-MiniLM-L6-v2
+======================
+
+
+
+curl -X 'POST' \ 'http://127.0.0.1:8080/rag/query?collection_name=sample30' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d '{ "query": "shoes" }' { "response": "I've found a pair of shoes that are very good for the price.", "retrieved_documents": [ { "product_type": "SHOES", "image_caption": "women ' s sneakers in grey leather with white soles", "image_id": "71W7h69QPRL", "brand": "Care of by Puma", "model_name": "Leather Platform Court", "color_standardized": "Grey", "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11", "image_path": "/24/24ece65e.jpg", "item_id": "B07XTPN3HT" }, { "product_type": "SHOES", "bullet_point": "Mercer Dress Pump | Mercer Dress Pump", "image_caption": "a pair of black and silver shoes", "image_id": "81CFtX0XzsL", "brand": "206 Collective", "model_name": "Mercer Dress Pump", "color_standardized": "Silver", "item_name": "206 Collective Women's Mercer Dress Pump, silver/metallic leather, 5.5 C/D US", "image_path": "/9b/9b40513c.jpg", "item_id": "B0789V16ZR" }, { "product_type": "BOOT", "image_caption": "women ' s ankle boots in brown sued", "image_id": "81PEVXHRcUL", "brand": "find.", "model_name": "Pull on Leather Gumsole", "color_standardized": "Beige", "item_name": "find. Women's Pull On Leather Gumsole, Beige Almond, US 5", "image_path": "/d4/d462e63e.jpg", "item_id": "B07R9F35LJ" } ] } curl -X 'POST' \   'http://127.0.0.1:8080/rag/query?collection_name=sample30' \   -H 'accept: application/json' \   -H 'Content-Type: application/json' \   -d '{   "query": "cellular case" }' { "response": "It's a cellular case.", "retrieved_documents": [ { "item_id": "B07T7ZY6P6", "product_type": "CELLULAR_PHONE_CASE", "bullet_point": "3D Printed Hard Back Case Mobile Cover for Vivo V1 Max | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface. | Slim Hard Back Cover | No Warranty", "model_name": "Vivo V1 Max", "item_name": "Amazon Brand - Solimo Designer Lighting 3D Printed Hard Back Case Mobile Cover for Vivo V1 Max", "image_caption": "a phone case with christmas lights on it", "image_id": "71bcNwxkB7L", "image_path": "/c3/c3406c06.jpg", "brand": "Amazon Brand - Solimo", "color_standardized": "multi-colored" }, { "item_id": "B07XTPN3HT", "product_type": "SHOES", "model_name": "Leather Platform Court", "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11", "image_caption": "women ' s sneakers in grey leather with white soles", "image_id": "71W7h69QPRL", "image_path": "/24/24ece65e.jpg", "brand": "Care of by Puma", "color_standardized": "Grey" }, { "item_id": "B0853X5SQ5", "product_type": "CELLULAR_PHONE_CASE", "bullet_point": "Snug fit for Lava Z61, with perfect cut-outs for volume buttons, audio and charging ports | Compatible with Lava Z61 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface.", "model_name": "Lava Z61", "material": "Silicon", "item_name": "Amazon Brand - Solimo Designer Red Moon UV Printed Soft Back Case Mobile Cover for Lava Z61", "image_caption": "a phone case with the silhouette of a red moon on a black background", "image_id": "616ZijT0A5L", "image_path": "/a7/a7270e7a.jpg", "brand": "Amazon Brand - Solimo", "color_standardized": "multi-colored" } ] } curl -X 'POST' \ 'http://127.0.0.1:8080/rag/query?collection_name=sample30' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d '{ "query": "baby wash" }' { "response": "Solimo Deep Moisturizing Baby Wash is a 13-fluid ounce bottle of deep moisturizing baby wash. It is a SKINCLEANING AGENT.", "retrieved_documents": [ { "item_id": "B07QCTFS6B", "product_type": "SANDAL", "image_id": "71VfryrhE4L", "image_path": "/22/22103cd2.jpg", "brand": "Amazon Essentials", "model_name": "Delia", "color_standardized": "Grey", "item_name": "Amazon Essentials Women's Delia Sandal, Grey, 6 Medium US", "bullet_point": "Light Weight | Comfort Construction", "image_caption": "a pair of women ' s sandals" }, { "item_id": "B07N6V9Z41", "product_type": "HOME_BED_AND_BATH", "image_id": "810iH82SMKL", "image_path": "/f0/f0f82cfb.jpg", "brand": "AmazonBasics", "item_name": "AmazonBasics Non-Slip Bathroom Bath Rug Mat with Textured Waves", "image_caption": "a white bath mat on a white background" }, { "item_id": "B07VTCS9DQ", "product_type": "SKIN_CLEANING_AGENT", "image_id": "71byIpH+1LL", "image_path": "/87/87868d71.jpg", "brand": "Solimo", "item_name": "Amazon Brand - Solimo Deep Moisturizing Baby Wash, 13 Fluid Ounce", "bullet_point": "One 13-fluid ounce bottle of deep moisturizing baby wash | Tear-free | Pediatrician tested | Directions: Dispense onto a wet washcloth or your hands. Apply to skin and hair. Lather and rinse | Each bottle comes with a pump dispenser top | If you like Baby Dove Tip to Toe Wash, we invite you to try Solimo Deep Moisturizing Baby Wash | Satisfaction Guarantee: We're proud of our products. If you aren't satisfied, we'll refund you for any reason within a year of purchase. 1-877-485-0385 | An Amazon brand", "image_caption": "a bottle of soap on a white background" } ] } curl -X 'POST' \ 'http://127.0.0.1:8080/rag/query?collection_name=sample30' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d '{ "query": "meal" }' { "response": "I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make a meal kit for two people. I've tried to make", "retrieved_documents": [ { "bullet_point": "Ginger chicken stir-fried with vegetables served over egg-fried rice | Quick to cookâ€”from box to table in about 30 minutes | Easy-to-follow, chef-designed recipe | Includes perfectly portioned ingredients | 1+ Day Freshness Guarantee â€“ You will have at least one day to cook your meal kit once you receive it", "image_id": "71I4ezaoNgL", "image_path": "/10/102157fb.jpg", "item_id": "B07YQPTXFK", "item_name": "Amazon Meal Kits, Chicken & Vegetable Stir-Fry with Fried Rice, Serves 2", "product_type": "GROCERY", "image_caption": "a box of chicken and vegetable pasta on a white background", "brand": "Amazon Meal Kits" }, { "bullet_point": "Light Weight | Comfort Construction", "image_id": "71VfryrhE4L", "image_path": "/22/22103cd2.jpg", "model_name": "Delia", "color_standardized": "Grey", "item_id": "B07QCTFS6B", "item_name": "Amazon Essentials Women's Delia Sandal, Grey, 6 Medium US", "product_type": "SANDAL", "image_caption": "a pair of women ' s sandals", "brand": "Amazon Essentials" }, { "image_id": "71W7h69QPRL", "image_path": "/24/24ece65e.jpg", "model_name": "Leather Platform Court", "color_standardized": "Grey", "item_id": "B07XTPN3HT", "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11", "product_type": "SHOES", "image_caption": "women ' s sneakers in grey leather with white soles", "brand": "Care of by Puma" } ] } curl -X 'POST' \ 'http://127.0.0.1:8080/rag/query?collection_name=sample30' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d '{ "query": "ballet shoes" }' { "response": "I've tried to find a pair of shoes that are not as good as the ones I've tried. They are very expensive.", "retrieved_documents": [ { "item_id": "B07PNRKLTV", "bullet_point": "Classic and versatile ballet flats for everyday use with excellent fit. | Casual silhouette with round toe shape and flattering profile. | Soft faux leather upper with soft elastic top and smooth design for increased comfort. | Microfiber interior made of faux suede for added comfort and breathability. | Genuine leather lining with \"Heel-Pillow\" comfort technology.", "image_caption": "a pair of women ' s shoes on a white background", "image_id": "61FrcvneSJL", "model_name": "Belice Women's Ballet Flat", "item_name": "Amazon Essentials Belice Women's Flat Ballet Flat, nude, 46.5 EU", "product_type": "SHOES", "image_path": "/1a/1a23da71.jpg" }, { "item_id": "B07PPXFC2R", "bullet_point": "Classic and versatile ballet flats for everyday use with excellent fit. | Casual silhouette with round toe shape and flattering profile. | Soft faux leather upper with soft elastic top and smooth design for increased comfort. | Microfiber interior made of faux suede for added comfort and breathability. | Genuine leather lining with \"Heel-Pillow\" comfort technology.", "image_caption": "a pair of leopard print shoes", "image_id": "51rXStEHElL", "model_name": "Belice Women's Ballet Flat", "item_name": "Amazon Essentials Belice Women's Flat Ballet Flat, Leopard pattern, 44 EU", "product_type": "SHOES", "image_path": "/55/55c7d8e2.jpg" }, { "item_id": "B07XTPN3HT", "image_caption": "women ' s sneakers in grey leather with white soles", "image_id": "71W7h69QPRL", "model_name": "Leather Platform Court", "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11", "product_type": "SHOES", "image_path": "/24/24ece65e.jpg", "brand": "Care of by Puma", "color_standardized": "Grey" } ] } curl -X 'POST' \ 'http://127.0.0.1:8080/rag/query?collection_name=sample30' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d '{ "query": "red phone case" }' { "response": "The red phone case is a great gift for women.", "retrieved_documents": [ { "bullet_point": "Snug fit for Lava Z61, with perfect cut-outs for volume buttons, audio and charging ports | Compatible with Lava Z61 | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface.", "image_id": "616ZijT0A5L", "image_path": "/a7/a7270e7a.jpg", "brand": "Amazon Brand - Solimo", "model_name": "Lava Z61", "color_standardized": "multi-colored", "item_name": "Amazon Brand - Solimo Designer Red Moon UV Printed Soft Back Case Mobile Cover for Lava Z61", "product_type": "CELLULAR_PHONE_CASE", "image_caption": "a phone case with the silhouette of a red moon on a black background", "material": "Silicon", "item_id": "B0853X5SQ5" }, { "bullet_point": "3D Printed Hard Back Case Mobile Cover for Vivo V1 Max | Easy to put & take off with perfect cutouts for volume buttons, audio & charging ports. | Stylish design and appearance, express your unique personality. | Extreme precision design allows easy access to all buttons and ports while featuring raised bezel to life screen and camera off flat surface. | Slim Hard Back Cover | No Warranty", "image_id": "71bcNwxkB7L", "image_path": "/c3/c3406c06.jpg", "brand": "Amazon Brand - Solimo", "model_name": "Vivo V1 Max", "color_standardized": "multi-colored", "item_name": "Amazon Brand - Solimo Designer Lighting 3D Printed Hard Back Case Mobile Cover for Vivo V1 Max", "product_type": "CELLULAR_PHONE_CASE", "image_caption": "a phone case with christmas lights on it", "item_id": "B07T7ZY6P6" }, { "image_id": "71W7h69QPRL", "image_path": "/24/24ece65e.jpg", "brand": "Care of by Puma", "model_name": "Leather Platform Court", "color_standardized": "Grey", "item_name": "CARE OF by PUMA Womens^Women's Leather Platform Court Low-Top Sneakers, Gray Peach Bud, 11", "product_type": "SHOES", "image_caption": "women ' s sneakers in grey leather with white soles", "item_id": "B07XTPN3HT" } ] } curl -X 'POST' \ 'http://127.0.0.1:8080/rag/query?collection_name=sample30' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d '{ "query": "table" }' { "response": "The Rivet Mid-Century Modern Round Black Wood Nesting Side End Table, 15.7\" W, Dark Oak Type: TABLE Brand: Rivet Features: Suited for small spaces, each table is sold individually so it can be used on its own or nested as a pair. Park your remote control as you watch TV or use to serve snacks at your next party - they're just what you need beside your sofa or chair. | 15.7\" Diameter x 18.1\"H | Solid hardwood with dark oak finish | Each round modern table has a classic look to blend with traditional and modern dcor. | Ideal for a tight corner next to a sofa, or for serving drinks and snacks | No assembly required. Wipe with soft dry cloth. | Free returns for 30 days. 1-year warranty. Color: Brown Material: wood", "retrieved_documents": [ { "item_id": "B07PRBRD85", "item_name": "AmazonBasics - Privacy Filters", "product_type": "OFFICE_ELECTRONICS", "image_caption": "a laptop with a screen on top of it", "image_path": "/41/41e08cd0.jpg", "image_id": "61Bj5tY+KDL" }, { "item_id": "B07RJFV4NN", "item_name": "AmazonBasics Gallery Wall Frame - 43 x 58 cm for 28 x 36 cm Display, Barnwood (2-Pack)", "product_type": "HOME", "image_caption": "a picture of a green leaf on a white background", "image_path": "/86/8662e229.jpg", "brand": "AmazonBasics", "bullet_point": "Gallery-style wall frames for displaying photographs, prints, original artwork, and more | Simple design that brings a clean, polished look to your display | Includes Plexi-Glass Front, sturdy backing, and durable frame | Easy to put together and hang yourself; no tools required | Hang horizontally or vertically with included hanging hardware | 17\" x 23\" (43 x 58 cm) Frame For 11\" x 14\" (28 x 36 cm) Photo", "image_id": "91E7B4XSmqL" }, { "item_id": "B072ZKPK7J", "item_name": "Amazon Brand â€“ Rivet Mid-Century Modern Round Black Wood Nesting Side End Table, 15.7\" W, Dark Oak", "product_type": "TABLE", "image_caption": "the side table is made from wood and has a black finish", "image_path": "/2b/2ba81345.jpg", "brand": "Rivet", "material": "wood", "bullet_point": "Suited for small spaces, each table is sold individually so it can be used on its own or nested as a pair. Park your remote control as you watch TV or use to serve snacks at your next party - they're just what you need beside your sofa or chair. | 15.7\" Diameter x 18.1\"H | Solid hardwood with dark oak finish | Each round modern table has a classic look to blend with traditional and modern dÃ©cor. | Ideal for a tight corner next to a sofa, or for serving drinks and snacks | No assembly required. Wipe with soft dry cloth. | Free returns for 30 days. 1-year warranty.", "image_id": "81YAPPy05EL", "color_standardized": "Brown" } ] } curl -X 'POST' \ 'http://127.0.0.1:8080/rag/query?collection_name=sample30' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d '{ "query": "pet bed" }' { "response": "It's a simple slipcover sofa. It's 88.5\"W x 39\"D x 37\"H. It's a classic design in a 100% cotton fabric. It's not only super cozy but low maintenance and built to endure wear and tear.", "retrieved_documents": [ { "image_caption": "a small dog sitting in a small dog bed", "image_path": "/1f/1f9388d8.jpg", "brand": "AmazonBasics", "item_id": "B07FD7KTJX", "product_type": "PET_SUPPLIES", "bullet_point": "Plush self-warming pet bed for dogs and cats | Made with the same technology as self-warming mylar \"space blankets\" | Effectively retains and reflects your pets's body heat | Covered in faux sherpa fleece and supple corduroy | No electricity required", "image_id": "61r9T3tq6ZL", "material": "Faux sherpa fleece; Supple corduroy", "item_name": "AmazonBasics Warming Pet Bed 22-Inch DF2018203M" }, { "image_caption": "a white bath mat on a white background", "image_path": "/f0/f0f82cfb.jpg", "brand": "AmazonBasics", "item_id": "B07N6V9Z41", "product_type": "HOME_BED_AND_BATH", "image_id": "810iH82SMKL", "item_name": "AmazonBasics Non-Slip Bathroom Bath Rug Mat with Textured Waves" }, { "image_caption": "[undetermined product]", "image_path": "/54/540d3b8b.jpg", "brand": "Stone & Beam", "color_standardized": "Grey", "item_id": "B073G8Q656", "product_type": "FURNITURE_COVER", "bullet_point": "Nothing says casual comfort like this simple slipcovered sofa. With a classic design in a 100% cotton fabric it's not only super cozy but low maintenance and built to endure wear and tear. | 88.5\"W x 39\"D x 37\"H | Solid hardwood and laminate wood with 100% cotton | Casual | Exceptionally functional; removable slipcovers, reversible cushions | Easy assembly in 15 minutes | Free returns for 30 days. 3-year warranty.", "image_id": "81NeiTTcHwL", "material": "hardwood and laminate wood with 100% cotton", "item_name": "Amazon Brand â€“ Stone & Beam Carrigan Modern Sofa Couch with Slipcover, 88.5\"W, Grey Taupe" } ] }

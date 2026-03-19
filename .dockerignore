@@ -1,0 +1,65 @@
+# Ignore Python bytecode files
+frontend/__pycache__
+frontend/*.pyc
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore Docker-related files
+Dockerfile
+.dockerignore
+
+# Ignore .git directory
+.git/
+
+# Ignore logs
+*.log
+
+# Ignore test files
+tests/
+*.test.py
+
+# Ignore node_modules to prevent unnecessary dependencies being added to the Docker image
+frontend/node_modules/
+# Ignore build directories for React and other generated files
+frontend/build/
+frontend/dist/
+frontend/.tmp/
+
+# Ignore FastAPI build and other temporary directories
+app/__pycache__/
+app/.pytest_cache/
+app/.venv/
+
+# Ignore environment-specific configuration files
+.env
+.env.local
+.env.*.local
+.envprod
+
+# Ignore test and coverage directories
+coverage/
+tests/
+
+# Ignore editor and IDE-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+
+# Ignore docker files if not needed
+Dockerfile*
+docker-compose.*
+
+# Ignore git files (if not needed in the Docker image)
+.git/
+.gitignore
+
+#Data
+/data
+/pg-data
+/milvus-data
+/visualization_data
+/visualization-data

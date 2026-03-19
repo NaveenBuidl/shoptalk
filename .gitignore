@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+# Jupyter
+.ipynb_checkpoints/
+# Environment
+.env
+*.env
+!.env.example
+# Data files
+*.csv
+*.pkl
+*.pickle
+*.h5
+*.bin
+*.pt
+*.pth
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+# OS
+.DS_Store
+Thumbs.db
+# IDE
+.vscode/
+.idea/
+# Docker volumes
+milvus-data/
+pg-data/
+# Videos
+*.mp4
+*.avi
+*.mov
+# NLTK data
+nltk_data/

@@ -1,0 +1,21 @@
+services:
+
+  fastapi-shop-app:
+    build: 
+      context: ./app
+    container_name: fastapi-app-st
+    volumes:
+      - ./data:/app/data        
+    ports:
+      - "8080:8080"  # FastAPI app port 
+ 
+    env_file:
+      - .env  
+
+    networks:
+      - app-network-st
+
+networks:
+  app-network-st:
+    external: true
+

@@ -4,6 +4,8 @@ A product search assistant that takes natural language queries (like "am feeling
 
 [Demo video](https://youtu.be/p5Fs53gpW2g)
 
+![ShopTalk search results](screenshots/shoptalk_demo.png)
+
 ## How it works
 
 User types a query. The system extracts intent (category, color, brand), runs vector search (Milvus) and keyword search (BM25) in parallel, reranks using four scoring components, sends the top 3 products to GPT-3.5 for a conversational recommendation, and displays product cards with images and metadata.
